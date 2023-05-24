@@ -1,0 +1,206 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    max-height: auto;
+    max-width: 960px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    border: solid;
+    border-width: 1px;
+    margin: auto;
+}
+
+hr {
+    border: solid;
+    width: auto;
+    background-color: black;
+    border: none;
+    height: 1px;
+    margin-bottom: 20px;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.name-line {
+    display: block;
+    width: 100px;
+    height: 3px;
+    border-radius: 25%;
+    background-color: #000;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+h1 {
+    font-size: 64px;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin: 10px 0px 0px 0px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 0px;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0 0 5px;
+}
+
+/* ======================= SIDEBAR ========================= */
+
+.sidebar {
+    grid-area: 1 / 1 / 9 /2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    background-image: linear-gradient(rgb(239, 233, 214), rgb(255, 255, 255));
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.contact {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+
+.languages {
+    margin: 15px 0 15px 0;
+}
+
+.languages-item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    margin: 20px 5px 5px 5px;
+}
+
+.languages-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 6px;
+}
+
+.paragraph-interests {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    text-align: justify;
+    margin-left: 5px;
+}
+
+.summary {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+img {
+    width: 12rem;
+    border-radius: 50%;
+    margin: 15px;
+    border: solid;
+    border-width: 1px;
+}
+
+.insta {
+    transform: translate(50px, -210px);
+}
+
+i {
+    margin: 0 5px;
+}
+
+.profilePicture:hover {
+    opacity: 80%;
+}
+
+/* =======================  MAIN  ========================= */
+
+.main {
+    grid-area: 2 / 2 / 9 / 6;
+    font-size: 12px;
+    padding: 40px;
+}
+
+.paragraph-summary {
+    text-align: justify;
+}
+
+.paragraph-education {
+    text-align: justify;
+    margin-left: 25px;
+}
+
+
+/* ==================== TIMELINE ITEMS ============================= */
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.data-range {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+/* ==================== TIMELINE ELEMENTS ========================= */
+
+.dot {
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-color: #000;
+    border-radius: 50%;
+    transform: translate(-4px, 6px);
+}
+
+
+.line {
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+}
+
+/* ==================== FOOTER ========================= */
+
+.footer {
+    grid-area: 9 / 1 / 10 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: x-small;
+}
