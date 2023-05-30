@@ -23,6 +23,8 @@ body {
 
     .sidebar {
         align-items: center;
+        border-top: 1px solid;
+
     }
 
     .contact {
@@ -30,9 +32,11 @@ body {
     }
 
     img {
-        margin: 0;
+        border-radius: 0%;
+        margin: 15px;
+        border: solid;
+        border-width: 1px;
     }
-
 }
 
 
@@ -57,7 +61,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 48px;
     padding: 0;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
@@ -74,7 +78,7 @@ h2 {
 
 h3 {
     font-family: 'Open Sans', sans-serif;
-    margin: 10px 0 0 5px;
+    margin: 0 0 0 5px;
 }
 
 /* ======================= HEADER ========================= */
@@ -84,11 +88,11 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    margin: 30px;
 }
 
 .name-line {
-    display: block;
+    display: none;
     width: 100px;
     height: 3px;
     border-radius: 25%;
@@ -102,7 +106,7 @@ h3 {
     grid-area: 1 / 1 / 4 / 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
     padding: 30px;
     background-image: linear-gradient(rgb(239, 233, 214), rgb(255, 255, 255));
     font-family: 'Open Sans', sans-serif;
@@ -113,10 +117,11 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     text-align: left;
+    margin-top: 50px;
 }
 
 .languages {
-    margin: 15px 0 15px 0;
+    margin: 15px 70px 15px 0;
 }
 
 .languages-item {
@@ -134,19 +139,6 @@ h3 {
     margin-left: 6px;
 }
 
-.paragraph-interests {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    text-align: left;
-    text-align: justify;
-    margin-left: 5px;
-}
-
-.summary {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    text-align: left;
-}
 
 img {
     width: 12rem;
@@ -157,7 +149,8 @@ img {
 }
 
 .insta {
-    transform: translate(50px, -210px);
+    display: none;
+    /* transform: translate(50px, -210px); */
 }
 
 i {
@@ -175,16 +168,29 @@ i {
     display: flex;
     flex-direction: column;
     font-size: 12px;
-    padding: 40px;
+    padding: 0 40px;
 }
 
-.paragraph-summary {
+.summary,
+.interests {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.paragraph-summary,
+.paragraph-interests {
     text-align: justify;
 }
 
 .paragraph-education {
     text-align: justify;
     margin-left: 25px;
+}
+
+ul {
+    margin-top: 2px;
 }
 
 
