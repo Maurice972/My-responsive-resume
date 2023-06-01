@@ -15,6 +15,7 @@ body {
     margin: auto;
 }
 
+
 @media (max-width: 767px) {
 
     .wrapper {
@@ -24,21 +25,29 @@ body {
     .sidebar {
         align-items: center;
         border-top: 1px solid;
-
     }
 
     .contact {
         text-align: center;
     }
 
-    img {
-        border-radius: 0%;
-        margin: 15px;
-        border: solid;
-        border-width: 1px;
+    .main p,
+    .main ul,
+    .main .expirience-div,
+    .main .education-div {
+        height: 0;
+        overflow: hidden;
+    }
+
+    h2 {
+        cursor: pointer;
+    }
+
+    input:checked~.paragraph-interests {
+        height: 100px;
+        overflow: visible;
     }
 }
-
 
 hr {
     border: solid;
@@ -114,7 +123,6 @@ h3 {
 }
 
 .contact {
-    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     text-align: left;
     margin-top: 50px;
@@ -174,14 +182,13 @@ i {
 .summary,
 .interests {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
     text-align: left;
-    margin-top: 5px;
 }
 
 .paragraph-summary,
 .paragraph-interests {
     text-align: justify;
+    font-size: 14px;
 }
 
 .paragraph-education {
@@ -189,12 +196,32 @@ i {
     margin-left: 25px;
 }
 
-ul {
-    margin-top: 2px;
+.expirience-div,
+.education-div {
+    margin: 14px 0;
+}
+
+.arrow {
+    visibility: visible;
+    font-size: 14px;
+}
+
+@media (min-width: 767px) {
+    .arrow {
+        visibility: hidden;
+    }
 }
 
 
+
+
 /* ==================== TIMELINE ITEMS ============================= */
+
+.list-item-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .list-item {
     display: flex;
