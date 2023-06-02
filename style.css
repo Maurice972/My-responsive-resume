@@ -31,8 +31,8 @@ body {
         text-align: center;
     }
 
-    .main p,
-    .main ul,
+    .main .paragraph-summary,
+    .main .paragraph-interests,
     .main .expirience-div,
     .main .education-div {
         height: 0;
@@ -43,20 +43,40 @@ body {
         cursor: pointer;
     }
 
+    input:checked~.arrow {
+        transform: translate(0, -20px) rotate(90deg);
+        transition: all .2s;
+    }
+
+
+    input:not(:checked)~.arrow {
+        transition: all .2s;
+    }
+
     input:checked~.paragraph-interests {
-        height: 100px;
-        overflow: visible;
+        height: max-content;
+    }
+
+    input:checked~.paragraph-summary {
+        height: max-content;
+    }
+
+    input:checked~.expirience-div {
+        height: max-content;
+    }
+
+    input:checked~.education-div {
+        height: max-content;
     }
 }
 
 hr {
     border: solid;
-    width: auto;
+    width: 100%;
     background-color: black;
     border: none;
     height: 1px;
     margin-bottom: 20px;
-
 }
 
 
@@ -100,8 +120,14 @@ h3 {
     margin: 30px;
 }
 
+.header-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .name-line {
-    display: none;
+    display: block;
     width: 100px;
     height: 3px;
     border-radius: 25%;
@@ -204,6 +230,8 @@ i {
 .arrow {
     visibility: visible;
     font-size: 14px;
+    align-self: flex-end;
+    transform: translate(0, -20px);
 }
 
 @media (min-width: 767px) {
@@ -213,14 +241,11 @@ i {
 }
 
 
-
-
 /* ==================== TIMELINE ITEMS ============================= */
 
 .list-item-heading {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .list-item {
