@@ -1,2 +1,2 @@
 # My-responsive-resume
-Classic resume in HTML and CSS done in a responsive way.
+Classic resume in HTML and CSS done in a responsive. Toggles with moving chevrons added without using JS just some CSS magic instead...
