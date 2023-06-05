@@ -260,14 +260,18 @@ i {
 }
 
 /* ==================== TIMELINE ELEMENTS ========================= */
+.dot-line {
+    display: flex;
+    margin-right: 5px;
+}
 
 .dot {
     display: block;
-    width: 9px;
-    height: 9px;
+    width: 8px;
+    height: 8px;
     background-color: #000;
     border-radius: 50%;
-    transform: translate(-4px, 6px);
+    transform: translate(4.5px, 6px);
 }
 
 
@@ -276,6 +280,7 @@ i {
     width: 1px;
     height: 100%;
     background-color: #000;
+    transform: translate(0, 10px);
 }
 
 /* ==================== FOOTER ========================= */
