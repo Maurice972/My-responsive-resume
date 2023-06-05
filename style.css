@@ -15,6 +15,7 @@ body {
     margin: auto;
 }
 
+
 @media (max-width: 767px) {
 
     .wrapper {
@@ -24,30 +25,58 @@ body {
     .sidebar {
         align-items: center;
         border-top: 1px solid;
-
     }
 
     .contact {
         text-align: center;
     }
 
-    img {
-        border-radius: 0%;
-        margin: 15px;
-        border: solid;
-        border-width: 1px;
+    .main .paragraph-summary,
+    .main .paragraph-interests,
+    .main .expirience-div,
+    .main .education-div {
+        height: 0;
+        overflow: hidden;
+    }
+
+    h2 {
+        cursor: pointer;
+    }
+
+    input:checked~.arrow {
+        transform: translate(0, -20px) rotate(90deg);
+        transition: all .2s;
+    }
+
+
+    input:not(:checked)~.arrow {
+        transition: all .2s;
+    }
+
+    input:checked~.paragraph-interests {
+        height: max-content;
+    }
+
+    input:checked~.paragraph-summary {
+        height: max-content;
+    }
+
+    input:checked~.expirience-div {
+        height: max-content;
+    }
+
+    input:checked~.education-div {
+        height: max-content;
     }
 }
 
-
 hr {
     border: solid;
-    width: auto;
+    width: 100%;
     background-color: black;
     border: none;
     height: 1px;
     margin-bottom: 20px;
-
 }
 
 
@@ -91,8 +120,14 @@ h3 {
     margin: 30px;
 }
 
+.header-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .name-line {
-    display: none;
+    display: block;
     width: 100px;
     height: 3px;
     border-radius: 25%;
@@ -114,7 +149,6 @@ h3 {
 }
 
 .contact {
-    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     text-align: left;
     margin-top: 50px;
@@ -174,14 +208,13 @@ i {
 .summary,
 .interests {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
     text-align: left;
-    margin-top: 5px;
 }
 
 .paragraph-summary,
 .paragraph-interests {
     text-align: justify;
+    font-size: 14px;
 }
 
 .paragraph-education {
@@ -189,12 +222,31 @@ i {
     margin-left: 25px;
 }
 
-ul {
-    margin-top: 2px;
+.expirience-div,
+.education-div {
+    margin: 14px 0;
+}
+
+.arrow {
+    visibility: visible;
+    font-size: 14px;
+    align-self: flex-end;
+    transform: translate(0, -20px);
+}
+
+@media (min-width: 767px) {
+    .arrow {
+        visibility: hidden;
+    }
 }
 
 
 /* ==================== TIMELINE ITEMS ============================= */
+
+.list-item-heading {
+    display: flex;
+    flex-direction: column;
+}
 
 .list-item {
     display: flex;
@@ -208,14 +260,18 @@ ul {
 }
 
 /* ==================== TIMELINE ELEMENTS ========================= */
+.dot-line {
+    display: flex;
+    margin-right: 5px;
+}
 
 .dot {
     display: block;
-    width: 9px;
-    height: 9px;
+    width: 8px;
+    height: 8px;
     background-color: #000;
     border-radius: 50%;
-    transform: translate(-4px, 6px);
+    transform: translate(4.5px, 6px);
 }
 
 
@@ -224,6 +280,7 @@ ul {
     width: 1px;
     height: 100%;
     background-color: #000;
+    transform: translate(0, 10px);
 }
 
 /* ==================== FOOTER ========================= */

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Resume</title>
+    <title>Maciej Wasser - Responsive resume</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Pictures\favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +16,14 @@
 
 <body>
     <div class="wrapper">
+        <!---------------------------------- HEADER ------------------------------------>
         <div class="header">
             <div class="header-box">
                 <h1>Maciej Wasser<h1>
                         <span class="name-line"></span>
             </div>
-
         </div>
+        <!---------------------------------- SIDEBAR ----------------------------------->
         <div class="sidebar">
             <a class="profilePicture" href="https://www.instagram.com/matthiev.angelo/?hl=en"><img
                     src="Pictures\ProfilePicture.jpg" alt="profilePicture"></a>
@@ -51,160 +52,203 @@
                 </div>
             </section>
         </div>
+        <!---------------------------------- MAIN -------------------------------------->
         <div class="main">
             <section id="summary">
                 <div class="summary">
-                    <h2>Summary:</h2>
-                    <hr>
-                    <p class="paragraph-summary">
-                        I have a diverse professional background that includes project management, research consulting,
-                        and investment. While programming was initially a complementary skill, it has now become my main
-                        career focus, which I thoroughly enjoy. I have a particular interest in web 3.0 and blockchain
-                        technologies. I am proactive in seeking new opportunities to expand my skills and apply my
-                        knowledge to drive innovation and business growth. I am fluent in both Polish and English.</p>
-                </div>
-            </section>
-            <section id="professional-experience">
-                <h2>Professional Experience</h2>
-                <hr>
-                <div class="list-item">
-                    <div>
-                        <span class="dot"></span>
-                        <span class="line"></span>
-                    </div>
-                    <div>
-                        <h3>Investor, Freelance</h3>
-                        <span class="data-range">2018 - present</span>
-                        <ul>
-                            <li>Independently managed a diverse portfolio of financial assets, employing investment
-                                strategies for consistent outcomes.</li>
-                            <li>Got familiarity with blockchain technology and Web 3.0 technologies</li>
-                            <li>Constructed GPU mining rigs for cryptocurrencies, focusing on optimal
-                                performance and energy efficiency.</li>
-                            <li>Performed maintenance and repairs on components, handled basic Linux distributions.
-                            </li>
-                            <li>Set up and operated Helium miners for for utilization in blockchain technology.</li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div>
-                        <span class="dot"></span>
-                        <span class="line"></span>
-                    </div>
-                    <div>
-                        <h3>Project Manager, Contract</h3>
-                        <span class="data-range">2017-2018</span>
-                        <ul>
-                            <li>Led the launch of a new gastronomic concept, from ideation to
-                                execution
-                            </li>
-                            <li>Coordinated a team of professionals and subcontractors, ensuring timely
-                                and
-                                high-quality work</li>
-                            <li>Directed the budget, monitoring expenses and ensuring
-                                cost-effectiveness
-                            </li>
-                            <li>Maintained communication with investors, providing status updates and
-                                addressing
-                                concerns</li>
-                            <li>Negotiated terms with vendors and stakeholders, resulting in cost
-                                savings
-                                and
-                                improved project outcomes</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div>
-                        <span class="dot"></span>
-                        <!-- <span class="line"></span> -->
-                    </div>
-                    <div>
-                        <h3>Research Consultant in VR Startup, Dreams VR</h3>
-                        <span class="data-range">06.2016-01.2017</span>
-                        <ul>
-                            <li>Conducted market research to identify potential applications for the product in
-                                order to
-                                participate in the NCBR project</li>
-                            <li>Delivered product presentations to potential clients and investors,
-                                communicating the product's value proposition and features</li>
-                            <li>Prepared for joint research projects with universities</li>
-                            <li>Optimized the product to meet the needs of specific target audiences</li>
-                            <li>Collaborated on marketing initiatives, building brand awareness</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="Education">
-                <h2>Education</h2>
-                <hr>
-                <div class="list-item">
-                    <div>
-                        <span class="dot"></span>
-                        <span class="line"></span>
-                    </div>
-                    <div>
-                        <h3>Psychology, Cardinal Stefan Wyszynski University</h3>
-                        <span class="data-range">2015-2018</span>
-                        <p class="paragraph-education">During my studies, I became deeply interested in neuropsychology,
-                            specifically hemispatial
-                            neglect and Locked-in Syndrome. I was fascinated by Owen's research on communication
-                            abilities in locked-in syndrome patients. This led me to explore how brain damage affects
-                            perception, cognition, and behavior in relation to different neuropsychological disorders.
-                            I successfully led the neuropsychology section of science club and participated in numerous
-                            conferences and interesting
-                            initiatives.
+                    <div class="list-item-heading"> <input id="toggle-summary" type="checkbox" style="display: none;">
+                        <label for="toggle-summary">
+                            <h2>Summary</h2>
+                        </label><i class="fa-sharp fa-solid fa-chevron-right arrow"></i>
+                        <hr>
+                        <p class="paragraph-summary">
+                            I have a diverse professional background that includes project management, research
+                            consulting,
+                            and investment. While programming was initially a complementary skill, it has now become my
+                            main
+                            career focus, which I thoroughly enjoy. I have a particular interest in web 3.0 and
+                            blockchain
+                            technologies. I am proactive in seeking new opportunities to expand my skills and apply my
+                            knowledge to drive innovation and business growth. I am fluent in both Polish and English.
                         </p>
                     </div>
                 </div>
-                <div class="list-item">
-                    <div>
-                        <span class="dot"></span>
-                        <span class="line"></span>
-                    </div>
-                    <div>
-                        <h3>Psychology, University of Szczecin</h3>
-                        <span class="data-range">2014-2015</span>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div>
-                        <span class="dot"></span>
-                        <!-- <span class="line"></span> -->
-                    </div>
-                    <div>
-                        <h3>Navigation, Maritime Academy in Szczecin</h3>
-                        <span class="data-range">2011-2014</span>
+            </section>
+            <section id="professional-experience">
+                <div class="professional-experience">
+                    <div class="list-item-heading"> <input id="toggle-expirience" type="checkbox"
+                            style="display: none;">
+                        <label for="toggle-expirience">
+                            <h2>Professional Experience</h2>
+                        </label><i class="fa-sharp fa-solid fa-chevron-right arrow"></i>
+                        <hr>
+                        <div class="expirience-div">
+                            <div class="list-item">
+                                <div class="dot-line">
+                                    <span class="dot"></span>
+                                    <span class="line"></span>
+                                </div>
+                                <div>
+                                    <h3>Investor, Freelance</h3>
+                                    <span class="data-range">2018 - present</span>
+                                    <ul>
+                                        <li>Independently managed a diverse portfolio of financial assets, employing
+                                            investment
+                                            strategies for consistent outcomes.</li>
+                                        <li>Got familiarity with blockchain technology and Web 3.0 technologies</li>
+                                        <li>Constructed GPU mining rigs for cryptocurrencies, focusing on optimal
+                                            performance and energy efficiency.</li>
+                                        <li>Performed maintenance and repairs on components, handled basic Linux
+                                            distributions.
+                                        </li>
+                                        <li>Set up and operated Helium miners for for utilization in blockchain
+                                            technology.
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="dot-line">
+                                    <span class="dot"></span>
+                                    <span class="line"></span>
+                                </div>
+                                <div>
+                                    <h3>Project Manager, Contract</h3>
+                                    <span class="data-range">2017-2018</span>
+                                    <ul>
+                                        <li>Led the launch of a new gastronomic concept, from ideation to
+                                            execution
+                                        </li>
+                                        <li>Coordinated a team of professionals and subcontractors, ensuring timely
+                                            and
+                                            high-quality work</li>
+                                        <li>Directed the budget, monitoring expenses and ensuring
+                                            cost-effectiveness
+                                        </li>
+                                        <li>Maintained communication with investors, providing status updates and
+                                            addressing
+                                            concerns</li>
+                                        <li>Negotiated terms with vendors and stakeholders, resulting in cost
+                                            savings
+                                            and
+                                            improved project outcomes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="dot-line">
+                                    <span class="dot"></span>
+                                    <!-- <span class="line"></span> -->
+                                </div>
+                                <div>
+                                    <h3>Research Consultant in VR Startup, Dreams VR</h3>
+                                    <span class="data-range">06.2016-01.2017</span>
+                                    <ul>
+                                        <li>Conducted market research to identify potential applications for the product
+                                            in
+                                            order to
+                                            participate in the NCBR project</li>
+                                        <li>Delivered product presentations to potential clients and investors,
+                                            communicating the product's value proposition and features</li>
+                                        <li>Prepared for joint research projects with universities</li>
+                                        <li>Optimized the product to meet the needs of specific target audiences</li>
+                                        <li>Collaborated on marketing initiatives, building brand awareness</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="interests">
+            <section id="education">
+                <div class="education">
+                    <div class="list-item-heading"><input id="toggle-education" type="checkbox" style="display: none;">
+                        <label for="toggle-education">
+                            <h2>Education</h2>
+                        </label><i class="fa-sharp fa-solid fa-chevron-right arrow"></i>
+                        <hr>
+                        <div class="education-div">
+                            <div class="list-item">
+                                <div class="dot-line">
+                                    <span class="dot"></span>
+                                    <span class="line"></span>
+                                </div>
+                                <div>
+                                    <h3>Psychology, Cardinal Stefan Wyszynski University</h3>
+                                    <span class="data-range">2015-2018</span>
+                                    <p class="paragraph-education">During my studies, I became deeply interested in
+                                        neuropsychology,
+                                        specifically hemispatial
+                                        neglect and Locked-in Syndrome. I was fascinated by Owen's research on
+                                        communication
+                                        abilities in locked-in syndrome patients. This led me to explore how brain
+                                        damage
+                                        affects
+                                        perception, cognition, and behavior in relation to different neuropsychological
+                                        disorders.
+                                        I successfully led the neuropsychology section of science club and participated
+                                        in
+                                        numerous
+                                        conferences and interesting
+                                        initiatives.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="dot-line">
+                                    <span class="dot"></span>
+                                    <span class="line"></span>
+                                </div>
+                                <div>
+                                    <h3>Psychology, University of Szczecin</h3>
+                                    <span class="data-range">2014-2015</span>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <div class="dot-line">
+                                    <span class="dot"></span>
+                                    <!-- <span class="line"></span> -->
+                                </div>
+                                <div>
+                                    <h3>Navigation, Maritime Academy in Szczecin</h3>
+                                    <span class="data-range">2011-2014</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="interests">
                 <div class="interests">
-                    <h2>Interests:</h2>
-                    <hr>
-                    <p class="paragraph-interests">Spending time outdoors and exploring nature provides me
-                        with an opportunity to
-                        disconnect from the digital world and recharge my energy.
-                        Additionally, I tinker with my car as a hobby. The sense of accomplishment that comes from
-                        diagnosing and fixing mechanical issues brings me a lot of satisfaction.
-                        It honed my attention to detail and troubleshooting abilities with hands-on experience.
-                        Recently
-                        during my vacations, I took on a timber-frame house project that I'm building for myself.
-                    </p>
+                    <div class="list-item-heading">
+                        <input id="toggle-interests" type="checkbox" style="display: none;">
+                        <label for="toggle-interests">
+                            <h2>Interests</h2>
+                        </label><i class="fa-sharp fa-solid fa-chevron-right arrow"></i>
+                        <hr>
+                        <p class="paragraph-interests">Spending time outdoors and exploring nature
+                            provides me
+                            with an opportunity to
+                            disconnect from the digital world and recharge my energy.
+                            Additionally, I tinker with my car as a hobby. The sense of accomplishment that comes
+                            from
+                            diagnosing and fixing mechanical issues brings me a lot of satisfaction.
+                            It honed my attention to detail and troubleshooting abilities with hands-on experience.
+                            Recently
+                            during my vacations, I took on a timber-frame house project that I'm building for
+                            myself.
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>
+        <!--------------------------------- FOOTER ------------------------------------->
         <div class="footer">
             <p>Maciej Wasser © 2023</p>
         </div>
     </div>
-    </div>
-
-    </div>
-
 </body>
 
 </html>
