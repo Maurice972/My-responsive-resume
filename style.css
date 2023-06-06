@@ -27,10 +27,6 @@ body {
         border-top: 1px solid;
     }
 
-    img {
-        width: 15rem;
-    }
-
     .contact {
         text-align: center;
     }
@@ -91,17 +87,47 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: 32px;
+        font-size: 36px;
     }
 
     .fa-brands,
     .fab {
-        margin: 0 0.74em;
+        margin: 0 0.6em;
     }
 
     .contact-portfolio-label {
         display: none;
     }
+
+    /* ================================= LANGUAGES ========================================== */
+
+    .languages-description {
+        align-self: flex-end;
+    }
+
+    .language-bar,
+    .language-percentage {
+        height: 7px;
+        width: 100%;
+        border-radius: .25rem;
+    }
+
+    .language-bar {
+        background-color: rgb(0, 0, 0, 30%);
+    }
+
+    .polish {
+        display: block;
+        width: 100%;
+        background: rgb(0, 0, 0, 100%);
+    }
+
+    .english {
+        display: block;
+        width: 80%;
+        background: rgb(0, 0, 0, 100%);
+    }
+
 }
 
 hr {
@@ -189,7 +215,10 @@ h3 {
 }
 
 .languages {
-    margin: 15px 70px 15px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 30px 30px 30px;
 }
 
 .languages-item {
@@ -197,14 +226,13 @@ h3 {
     font-size: 16px;
     font-weight: 600;
     text-align: left;
-    margin: 20px 5px 5px 5px;
+    margin: 20px 5px 20px 0;
 }
 
 .languages-description {
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-style: italic;
-    margin-left: 6px;
 }
 
 
